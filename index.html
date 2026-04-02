@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ad Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img class="avatar" src="./jishnudp-cartoon.png" alt="jishnu.ads" />
+    <h1>AI Ad Templates</h1>
+    <p>Ready-to-use AI templates for video ads, image creatives &amp; prompts.</p>
+    <a class="ig-link" href="https://instagram.com/jishnu.ads" target="_blank" rel="noopener">@jishnu.ads on Instagram</a>
+  </header>
+
+  <div class="filter-bar" id="filters"></div>
+  <div id="templates"></div>
+
+  <footer>&copy; 2026</footer>
+
+  <script>
+    let allTemplates = [];
+    let activeFilter = "All";
+
+    fetch("templates.json")
+      .then((r) => r.json())
+      .then((data) => {
+        allTemplates = data;
+        buildFilters();
+        render();
+      });
+
+    function buildFilters() {
+      const tags = ["All", ...new Set(allTemplates.map((t) => t.tag))];
+      const bar = document.getElementById("filters");
+      bar.innerHTML = tags
+        .map(
+          (tag) =>
+            `<button class="filter-btn${tag === activeFilter ? " active" : ""}" data-tag="${tag}">${tag}</button>`
+        )
+        .join("");
+      bar.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("filter-btn")) return;
+        activeFilter = e.target.dataset.tag;
+        bar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+        e.target.classList.add("active");
+        render();
+      });
+    }
+
+    function render() {
+      const list = activeFilter === "All"
+        ? allTemplates
+        : allTemplates.filter((t) => t.tag === activeFilter);
+
+      document.getElementById("templates").innerHTML = list
+        .map(
+          (t) => `
+          <a class="card" href="${t.url}" target="_blank" rel="noopener">
+            <div class="card-top">
+              <span class="card-title">${t.title}<span class="arrow">&thinsp;&#8599;</span></span>
+              <span class="card-tag">${t.tag}</span>
+            </div>
+            <p class="card-desc">${t.description}</p>
+          </a>`
+        )
+        .join("");
+    }
+  </script>
+
+</body>
+</html>
