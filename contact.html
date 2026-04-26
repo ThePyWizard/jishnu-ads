@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="jishnudp-pixelart.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,14 +27,21 @@
       <div class="topbar__time">
         <span class="led"></span><span id="clock">--:--</span>
       </div>
+      <button class="audio-toggle" id="audio-toggle" type="button" aria-label="Toggle audio" aria-pressed="false" title="Mute / unmute (M)">
+        <span class="audio-toggle__on" aria-hidden="true">♪</span>
+        <span class="audio-toggle__off" aria-hidden="true">×</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span class="bar"></span></button>
     </header>
 
-    <nav class="nav fadeup fadeup--d1">
+    <nav class="nav fadeup fadeup--d1" id="primary-nav">
       <a href="index.html">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="experience.html">EXP</a>
       <a href="work.html">WORK</a>
+      <a href="ads.html">ADS</a>
       <a href="templates.html">PROMPTS</a>
+      <a href="play.html">PLAY</a>
       <a href="contact.html" class="is-active">CONTACT</a>
     </nav>
 
@@ -53,10 +62,11 @@
               <p class="term-line"><span class="prompt">$</span> ./compose-message <span class="cursor"></span></p>
               <p class="term-line"><span class="out">// fill in the fields below — i'll respond from <b style="color:var(--yellow)">jishnumm4312@gmail.com</b></span></p>
 
-              <form id="contact-form" action="https://formsubmit.co/jishnumm4312@gmail.com" method="POST" style="margin-top:18px;">
-                <input type="hidden" name="_subject" value="New transmission from JISHNU.SYS" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="text" name="_honey" style="display:none" />
+              <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="margin-top:18px;">
+                <input type="hidden" name="access_key" value="fadb9758-f507-4364-8113-19b4a326f406" />
+                <input type="hidden" name="subject" value="New transmission from JISHNU.SYS" />
+                <input type="hidden" name="from_name" value="JISHNU.SYS · Contact" />
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" />
 
                 <div class="field">
                   <label for="name">Your name</label>
@@ -80,6 +90,15 @@
                   <span class="send-status" id="send-status"></span>
                 </div>
               </form>
+
+              <div id="contact-success" hidden style="margin-top:18px;">
+                <p class="term-line"><span class="prompt">$</span> <span class="out">message delivered.</span></p>
+                <p class="term-line"><span class="prompt">$</span> <span class="out">awaiting response<span class="cursor"></span></span></p>
+                <p style="font-family: var(--f-display); font-size: 14px; color: var(--gold); text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 var(--black); letter-spacing: 1px; margin: 22px 0 14px;">★ TRANSMISSION SENT ★</p>
+                <p class="body">i'll reply within <b style="color:var(--gold)">24h</b> from <b style="color:var(--cyan)">jishnumm4312@gmail.com</b> to the address you gave. check spam if you don't see it.</p>
+                <p class="body" style="margin-top:10px; font-size:18px; color:var(--gray);">in a hurry? <a href="play.html" style="color:var(--gold);">play 5 rounds of snake</a> to unlock a 30-min audit slot.</p>
+                <button type="button" class="pbtn pbtn--cyan" id="contact-reset" style="margin-top:20px;">▶ SEND ANOTHER</button>
+              </div>
             </div></div>
           </section>
 
@@ -159,6 +178,7 @@
     </footer>
   </div>
 
+  <script src="audio.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

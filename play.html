@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JISHNU.SYS — Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="jishnudp-pixelart.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="horizon"></div>
+
+  <div class="app">
+    <header class="topbar fadeup">
+      <div class="topbar__title">
+        <span class="dots">
+          <span class="dot dot--g"></span>
+          <span class="dot dot--y"></span>
+          <span class="dot dot--c"></span>
+        </span>
+        JISHNU.SYS / ARCADE.EXE <span class="blink">_</span>
+      </div>
+      <div class="topbar__time">
+        <span class="led"></span><span id="clock">--:--</span>
+      </div>
+      <button class="audio-toggle" id="audio-toggle" type="button" aria-label="Toggle audio" aria-pressed="false" title="Mute / unmute (M)">
+        <span class="audio-toggle__on" aria-hidden="true">♪</span>
+        <span class="audio-toggle__off" aria-hidden="true">×</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span class="bar"></span></button>
+    </header>
+
+    <nav class="nav fadeup fadeup--d1" id="primary-nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="experience.html">EXP</a>
+      <a href="work.html">WORK</a>
+      <a href="ads.html">ADS</a>
+      <a href="templates.html">PROMPTS</a>
+      <a href="play.html" class="is-active">PLAY</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <main class="screen fadeup fadeup--d2">
+      <div class="container">
+
+        <p class="eyebrow">► ARCADE · MINI-GAME</p>
+        <h1 class="h-page">PLAY <span>SNAKE</span></h1>
+        <p class="lede" style="max-width:760px; margin: 12px 0 32px;">
+          Classic snake — eat the gold pixels, don't bite yourself, beat the high
+          score. Saves locally.
+        </p>
+
+        <div class="play">
+
+          <section class="cabinet fadeup fadeup--d2">
+            <div class="pframe pframe--yellow"><div class="pcard">
+              <div class="cabinet__screen" id="cabinet">
+                <canvas id="snake-canvas" width="400" height="400"></canvas>
+
+                <div class="cabinet__overlay" id="overlay-start">
+                  <div>
+                    <div class="cabinet__title">SNAKE.EXE</div>
+                    <p class="cabinet__sub" id="start-msg">eat the <b>gold</b> pixels.<br/>play <b>5 rounds</b> to unlock a free <b>30-min brand audit</b>.</p>
+                    <div class="cabinet__cta">
+                      <button class="pbtn" id="btn-start">▶ START</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cabinet__overlay is-hidden" id="overlay-pause">
+                  <div>
+                    <div class="cabinet__title">PAUSED</div>
+                    <p class="cabinet__sub">press <b>P</b> or tap RESUME</p>
+                    <div class="cabinet__cta">
+                      <button class="pbtn pbtn--cyan" id="btn-resume">RESUME</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cabinet__overlay is-hidden" id="overlay-over">
+                  <div>
+                    <div class="cabinet__title">GAME OVER</div>
+                    <div class="cabinet__finalscore" id="final-score">SCORE: 0</div>
+                    <p class="cabinet__sub" id="final-msg">try again, marketer.</p>
+                    <div class="cabinet__cta">
+                      <button class="pbtn" id="btn-claim" hidden>★ CLAIM AUDIT</button>
+                      <button class="pbtn pbtn--cyan" id="btn-retry">▶ RETRY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="scoreboard">
+                <div class="scoreboard__cell">
+                  <div class="scoreboard__k">SCORE</div>
+                  <div class="scoreboard__v" id="score">0</div>
+                </div>
+                <div class="scoreboard__cell scoreboard__cell--g">
+                  <div class="scoreboard__k">ATTEMPTS</div>
+                  <div class="scoreboard__v" id="attempts">0 / 5</div>
+                </div>
+                <div class="scoreboard__cell">
+                  <div class="scoreboard__k">HIGH SCORE</div>
+                  <div class="scoreboard__v" id="hiscore">0</div>
+                </div>
+              </div>
+
+              <div class="unlock-badge" id="unlock-badge">
+                <div class="unlock-badge__text">
+                  ★ AUDIT UNLOCKED
+                  <small>30-min brand audit · ready to claim</small>
+                </div>
+                <button type="button" class="unlock-badge__btn" id="unlock-badge-btn">CLAIM ►</button>
+              </div>
+
+              <div class="dpad" aria-label="Direction pad">
+                <button class="dpad__up"    data-dir="up"    aria-label="Up">▲</button>
+                <button class="dpad__left"  data-dir="left"  aria-label="Left">◄</button>
+                <button class="dpad__mid">●</button>
+                <button class="dpad__right" data-dir="right" aria-label="Right">►</button>
+                <button class="dpad__down"  data-dir="down"  aria-label="Down">▼</button>
+              </div>
+            </div></div>
+          </section>
+
+          <aside class="howto fadeup fadeup--d3">
+            <div class="pframe"><div class="pcard">
+              <h3>▼ HOW TO PLAY</h3>
+              <ul>
+                <li>Use <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> or <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> to steer.</li>
+                <li>Press <kbd>P</kbd> to pause / resume.</li>
+                <li>Tap the on-screen D-pad on mobile.</li>
+                <li>Eat the gold pixel. Don't hit walls or yourself.</li>
+                <li>Speed ramps up every 5 pixels. High score saves locally.</li>
+              </ul>
+            </div></div>
+
+            <div class="pframe pframe--yellow" style="margin-top:24px;"><div class="pcard">
+              <h3 style="color:var(--gold);">▼ THE PRIZE</h3>
+              <p class="body" style="font-size:20px; color:var(--paper);">
+                Play <b style="color:var(--pink-bright)">5 rounds</b> — win or lose, doesn't matter —
+                and you've earned a free <b style="color:var(--gold)">30-min brand audit</b>.
+              </p>
+              <p class="body" style="margin-top:10px; color:var(--paper-dim); font-size:19px;">
+                I'll personally review your ad account, creative library, and offer 3
+                things to fix this week. Live on a call.
+              </p>
+              <p class="body" style="margin-top:12px; color:var(--gray); font-size:17px; font-family: var(--f-pixel); letter-spacing: 1px; text-transform: uppercase;">
+                High score: <b style="color:var(--gold)" id="hiscore-2">0</b>
+              </p>
+            </div></div>
+          </aside>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="ticker fadeup fadeup--d3">
+      <div class="ticker__label">► ARCADE</div>
+      <div class="ticker__track">
+        <div class="ticker__inner">
+          <span>★</span> <b>SNAKE.EXE LOADED</b> <span>★</span> EAT GOLD · AVOID WALLS <span>★</span> <b>USE WASD OR ARROWS</b> <span>★</span> P TO PAUSE <span>★</span> <b>HIGH SCORE SAVED LOCALLY</b> <span>★</span>
+          <span>★</span> <b>SNAKE.EXE LOADED</b> <span>★</span> EAT GOLD · AVOID WALLS <span>★</span> <b>USE WASD OR ARROWS</b> <span>★</span> P TO PAUSE <span>★</span> <b>HIGH SCORE SAVED LOCALLY</b> <span>★</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Prize-claim modal ─────────────────────────────── -->
+  <div class="modal" id="prize-modal" aria-hidden="true" role="dialog" aria-labelledby="prize-title">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="pframe pframe--yellow"><div class="pcard">
+        <button type="button" class="modal__x" data-close aria-label="Close">✕</button>
+
+        <header class="modal__head">
+          <p class="eyebrow">★ EFFORT REWARDED · <span id="prize-attempts-show">5</span> ROUNDS PLAYED ★</p>
+          <h2 class="modal__title" id="prize-title">PICK A TIME</h2>
+        </header>
+        <p class="modal__lede">
+          i appreciate the effort — grab any slot below and i'll see you on a free
+          <b>30-min audit</b> of your brand &amp; ad creative.
+        </p>
+
+        <div class="cal-inline" id="my-cal-inline-30min-audit"></div>
+
+        <p class="body" style="margin-top:14px; color:var(--gray); font-size:18px; text-align:center;">
+          calendar not loading? <a id="cal-fallback" href="https://cal.com/jishnumm/30min-audit" target="_blank" rel="noopener" style="color:var(--gold)">open in a new tab ►</a>
+        </p>
+        <div class="cabinet__cta" style="margin-top:14px; justify-content:center;">
+          <button type="button" class="pbtn pbtn--cyan" data-close>BACK TO GAME</button>
+        </div>
+
+      </div></div>
+    </div>
+  </div>
+
+  <!-- Cal.com embed bootloader (loads embed.js lazily on first Cal() call) -->
+  <script>
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  </script>
+
+  <script src="audio.js"></script>
+  <script src="main.js"></script>
+  <script src="snake.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JISHNU.SYS — Prompt Vault</title>
+  <title>JISHNU.SYS — Ad Vault</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
@@ -22,7 +22,7 @@
           <span class="dot dot--y"></span>
           <span class="dot dot--c"></span>
         </span>
-        JISHNU.SYS / VAULT.EXE <span class="blink">_</span>
+        JISHNU.SYS / REEL.EXE <span class="blink">_</span>
       </div>
       <div class="topbar__time">
         <span class="led"></span><span id="clock">--:--</span>
@@ -39,8 +39,8 @@
       <a href="about.html">ABOUT</a>
       <a href="experience.html">EXP</a>
       <a href="work.html">WORK</a>
-      <a href="ads.html">ADS</a>
-      <a href="templates.html" class="is-active">PROMPTS</a>
+      <a href="ads.html" class="is-active">ADS</a>
+      <a href="templates.html">PROMPTS</a>
       <a href="play.html">PLAY</a>
       <a href="contact.html">CONTACT</a>
     </nav>
@@ -48,35 +48,40 @@
     <main class="screen fadeup fadeup--d2">
       <div class="container">
 
-        <p class="eyebrow">► PROMPT VAULT · NICHE-SPECIFIC AI RECIPES</p>
-        <h1 class="h-page">PROMPT <span>VAULT</span></h1>
-        <p class="lede" style="max-width:780px; margin: 12px 0 32px;">
-          AI prompts I actually use to ship ads. Pick a niche, copy the prompt, plug it
-          into Claude / ChatGPT / Sora / HeyGen — and ship a creative without staring
-          at a blank page.
+        <p class="eyebrow">► AD VAULT · CREATIVES I SHIPPED</p>
+        <h1 class="h-page">AD <span>VAULT</span></h1>
+        <p class="lede" style="max-width:780px; margin: 12px 0 28px;">
+          AI-driven video ads I shipped for subscription apps — Sora, HeyGen,
+          ElevenLabs, VEO, CapCut. Filter by brand, or tap
+          <b style="color:var(--gold);">★ TOP PICKS</b> to see only the proven
+          winners. Click any thumbnail to play.
         </p>
 
-        <div class="filters fadeup fadeup--d2" id="filters"></div>
-        <div id="templates"></div>
+        <div class="ads-controls">
+          <div class="filters" id="ads-filters" role="tablist" aria-label="Filter ads by brand"></div>
+          <button class="filter-btn ads-top-toggle" id="ads-top-toggle" type="button" aria-pressed="false">☆ TOP PICKS</button>
+        </div>
 
-        <p id="empty" style="display:none; text-align:center; margin-top:40px; font-family: var(--f-mono); color: var(--gray); font-size: 22px;">
-          ▼ NO QUESTS IN THIS CATEGORY YET. CHECK BACK SOON. ▼
+        <div class="ads-grid" id="ads-grid"></div>
+        <p id="ads-empty" hidden style="text-align:center; margin-top:40px; font-family: var(--f-mono); color: var(--gray); font-size: 22px;">
+          ▼ NO ADS HERE YET. ADD THEM TO videos.json ▼
         </p>
 
         <div style="margin-top:56px; text-align:center;">
-          <p class="eyebrow" style="margin-bottom:14px;">► WANT A CUSTOM PROMPT FOR YOUR APP?</p>
-          <a href="contact.html" class="pbtn">▶ REQUEST A PROMPT</a>
+          <p class="eyebrow" style="margin-bottom:14px;">► WANT ADS LIKE THESE?</p>
+          <a href="contact.html" class="pbtn">▶ START A PROJECT</a>
+          <a href="play.html" class="pbtn pbtn--cyan" style="margin-left:12px;">PLAY FOR A FREE AUDIT</a>
         </div>
 
       </div>
     </main>
 
     <footer class="ticker fadeup fadeup--d3">
-      <div class="ticker__label">► VAULT</div>
+      <div class="ticker__label">► REEL</div>
       <div class="ticker__track">
         <div class="ticker__inner">
-          <span>★</span> <b>FREE PROMPTS · NO LOGIN</b> <span>★</span> COPY · PASTE · SHIP <span>★</span> <b>NICHES: TRAVEL · GAMING · SAAS · FITNESS · BEAUTY · FOOD</b> <span>★</span> UPDATED MONTHLY <span>★</span>
-          <span>★</span> <b>FREE PROMPTS · NO LOGIN</b> <span>★</span> COPY · PASTE · SHIP <span>★</span> <b>NICHES: TRAVEL · GAMING · SAAS · FITNESS · BEAUTY · FOOD</b> <span>★</span>
+          <span>★</span> <b>27 AI VIDEO ADS</b> <span>★</span> SORA · HEYGEN · ELEVENLABS · VEO <span>★</span> <b>META · TIKTOK · YOUTUBE</b> <span>★</span> SHIPPED FOR TRAVELANIMATOR · WALKTHEWORLD · PUZZLECAFE <span>★</span>
+          <span>★</span> <b>27 AI VIDEO ADS</b> <span>★</span> SORA · HEYGEN · ELEVENLABS · VEO <span>★</span> <b>META · TIKTOK · YOUTUBE</b> <span>★</span> SHIPPED FOR TRAVELANIMATOR · WALKTHEWORLD · PUZZLECAFE <span>★</span>
         </div>
       </div>
     </footer>
@@ -84,6 +89,6 @@
 
   <script src="audio.js"></script>
   <script src="main.js"></script>
-  <script src="vault.js"></script>
+  <script src="ads.js"></script>
 </body>
 </html>

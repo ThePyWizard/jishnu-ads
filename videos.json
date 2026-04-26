@@ -1,0 +1,436 @@
+{
+  "_readme": "Add YouTube URLs below. 'brand' must match an id from the brands array. 'tools' is the AI stack you used. 'top: true' marks star performers — they show with a ★ badge and appear when TOP PICKS is toggled on.",
+  "brands": [
+    { "id": "travelanimator",  "label": "TravelAnimator" },
+    { "id": "marineradar",     "label": "MarineRadar" },
+    { "id": "walktheworld",    "label": "WalkTheWorld" },
+    { "id": "pushupchallenge", "label": "PushUp Challenge" },
+    { "id": "95th",            "label": "95th" },
+    { "id": "clear",           "label": "Clear" }
+  ],
+  "videos": [
+    {
+      "url":   "https://youtube.com/shorts/3VAsNIVZNFQ",
+      "brand": "travelanimator",
+      "title": "Talking Head UGC Women at Lake",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/oQM-tNJCntw",
+      "brand": "travelanimator",
+      "title": "Asian Women Talking Head UGC at Airport",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/oVXQsbg0ydo",
+      "brand": "travelanimator",
+      "title": "Street Interview Style Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/E9En-rPLCcg",
+      "brand": "travelanimator",
+      "title": "Women at Beach Talking Head UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/hp1L9sAwyhA",
+      "brand": "travelanimator",
+      "title": "Asian Women Talking Head UGC at Street",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/MX_E7Xi-Nio",
+      "brand": "travelanimator",
+      "title": "Women at Beach Talking Head UGC Video: Style2",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/bVqEc1Lc2Y4",
+      "brand": "travelanimator",
+      "title": "Hiker Girl at Mountain Talking Head UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/U4C05FEI7xs",
+      "brand": "travelanimator",
+      "title": "Hiker Girl at Hilltop Trekking UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/DxaJGLrL1xQ",
+      "brand": "travelanimator",
+      "title": "Hiker Girl walking at Forest",
+      "tools": ["Veo3", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/hfhEtkVvJtY",
+      "brand": "travelanimator",
+      "title": "Women at Home Multi Shot UGC Video",
+      "tools": ["Seedance2.0", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/OvGr0AUvonU",
+      "brand": "travelanimator",
+      "title": "Cyclist Multi Shot UGC Video",
+      "tools": ["Seedance2.0", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/lDTaIzN9rYg",
+      "brand": "travelanimator",
+      "title": "Traveler Girl Awestruck Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/0ql5BDXg_5Q",
+      "brand": "travelanimator",
+      "title": "Studio Shot Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/iR6OZsFxD78",
+      "brand": "travelanimator",
+      "title": "Hiker Guy GRWM Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/Jf9yPDvwQhY",
+      "brand": "travelanimator",
+      "title": "Hiker Girl GRWM Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/pHQ1ULmtqZI",
+      "brand": "travelanimator",
+      "title": "Awestruck Girl in Street Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/Dm0BJAh6uEQ",
+      "brand": "travelanimator",
+      "title": "Hiker Girl in Rain",
+      "tools": ["Seedance2.0", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/r5xHSTMSv_k",
+      "brand": "travelanimator",
+      "title": "Tattooed Women Looking at Animation Hook",
+      "tools": ["Veo3", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/F7OvS4F3U7Y",
+      "brand": "travelanimator",
+      "title": "Hiker Girl Awestruck Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/dBni23n1jZU",
+      "brand": "travelanimator",
+      "title": "Traveler Girl at Hotel UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/L511Zeat3j8",
+      "brand": "travelanimator",
+      "title": "Traveler Guy at Hotel UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/QjCs4314jUE",
+      "brand": "travelanimator",
+      "title": "Casual Traveler Women UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/il8-IQgjN_U",
+      "brand": "travelanimator",
+      "title": "Traveler Girl in Car UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/ig4fqGNETdk",
+      "brand": "travelanimator",
+      "title": "Hiker Guy talking about app",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/xAun4IFp7qQ",
+      "brand": "travelanimator",
+      "title": "Hiker Girl at Mountain Top UGC Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/SNFfVhcN7r8",
+      "brand": "travelanimator",
+      "title": "Hiker Girl at Hilltop Sunset UGC",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/CcMZosl3Kek",
+      "brand": "travelanimator",
+      "title": "Drag Content Creators IRL Hook",
+      "tools": ["Veo3", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/24X6N_oStCs",
+      "brand": "travelanimator",
+      "title": "Studio Shot Talking Head Video",
+      "tools": ["Veo3", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/-rjsfIP-3ao",
+      "brand": "travelanimator",
+      "title": "Creator Reacts to Travelanimator Video",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+
+    
+    {
+      "url":   "https://youtube.com/shorts/_11vOt5SsA4",
+      "brand": "marineradar",
+      "title": "Talking head women above boat",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/vQHuGSwz8Ls",
+      "brand": "marineradar",
+      "title": "Women at Sea Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/qao0mRc00PU",
+      "brand": "marineradar",
+      "title": "Talking Head Sailor Women Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/Y40s3HWGBEM",
+      "brand": "marineradar",
+      "title": "Casual Women at Sea Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/-M7KQ1bO9Is",
+      "brand": "marineradar",
+      "title": "Sailor Women Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/Tqqpsv3uTrQ",
+      "brand": "marineradar",
+      "title": "Talking Head Casual Women Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/AwW950KV0VE",
+      "brand": "marineradar",
+      "title": "Sailor Mature Man Talking Head Video",
+      "tools": ["Sora 2 Pro", "Capcut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/heZ8Bj8jqOM",
+      "brand": "marineradar",
+      "title": "Sailor Women Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/uo-_oczswE4",
+      "brand": "marineradar",
+      "title": "Seafarer Women Selfie Style Hook Video",
+      "tools": ["Kling Motion Control","CapCut"],
+      "top":   true
+    },
+
+
+    {
+      "url":   "https://youtube.com/shorts/c29s35j4n8I",
+      "brand": "walktheworld",
+      "title": "Taking Head UGC + Walking Stock Visuals",
+      "tools": ["Heygen", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/HBa82KcZI8s",
+      "brand": "walktheworld",
+      "title": "Studio Shot Talking Head + Gamefying Visuals",
+      "tools": ["VEO", "CapCut", "Nanobanana Pro"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/F96LqVBAE3M",
+      "brand": "walktheworld",
+      "title": "Women Walking Selfie Style Talking Head Video",
+      "tools": ["VEO", "CapCut", "Nanobanana Pro"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/8pH_XYvkeQQ",
+      "brand": "walktheworld",
+      "title": "Women Talking Head Walking Neighbourhood",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/l7XTcXGxT2E",
+      "brand": "walktheworld",
+      "title": "Multi Shot Guy Walking Video",
+      "tools": ["VEO", "Nanobanana Pro" ,"CapCut", "ElevenLabs"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/MmjFOtnLKk8",
+      "brand": "walktheworld",
+      "title": "Multi Shot Women Walking Video",
+      "tools": ["VEO", "Nanobanana Pro" ,"CapCut", "ElevenLabs"],
+      "top":   true
+    },
+
+
+    {
+      "url":   "https://youtube.com/shorts/5onxjCORDIU",
+      "brand": "pushupchallenge",
+      "title": "Man Taking Pushups at Backyard Talking Head Video",
+      "tools": ["Sora 2 Pro", "Capcut"],
+      "top":   true
+    },
+
+
+    {
+      "url":   "https://youtube.com/shorts/m-3OpnURHS4",
+      "brand": "95th",
+      "title": "Fit Man Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/c_gfdkYKr2g",
+      "brand": "95th",
+      "title": "Regular Guy Taking Pushups Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/g1U3iqm4nQA",
+      "brand": "95th",
+      "title": "Fit Girl at Rooftop Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/YEqEfcEx6Xg",
+      "brand": "95th",
+      "title": "Chubby Fit Girl Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/bZrqJo-DXaE",
+      "brand": "95th",
+      "title": "Awestruck Girl Hook",
+      "tools": ["Veo3", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/XjXl73vCF1o",
+      "brand": "95th",
+      "title": "Women Taking Pushups Hook",
+      "tools": ["Veo3", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/yv34fykTtJQ",
+      "brand": "95th",
+      "title": "Women Hanging Hook",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/ewx1rDe0-98",
+      "brand": "95th",
+      "title": "Women Taking Pushups Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/-FaE-p335Ic",
+      "brand": "95th",
+      "title": "Casual Women at BedTime Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/lv8tVRWmXvc",
+      "brand": "95th",
+      "title": "Women Infront of Laptop Awestruck Hook",
+      "tools": ["Kling Motion Control", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/PcwTPcUQUKA",
+      "brand": "95th",
+      "title": "Women at Gym Walking with Cat Hook",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    },
+    {
+      "url":   "https://youtube.com/shorts/8NgX85S7EGs",
+      "brand": "95th",
+      "title": "Women Awestruck at Sofa Hook",
+      "tools": ["Veo3", "CapCut"],
+      "top":   false
+    },
+
+
+    {
+      "url":   "https://youtube.com/shorts/ngEqhnU7zQs",
+      "brand": "clear",
+      "title": "Fitness Girl Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   true
+    },
+    {
+      "url":   "https://youtube.com/shorts/fY8yqh7agPE",
+      "brand": "clear",
+      "title": "Casual Mom Talking Head Video",
+      "tools": ["Sora 2 Pro", "CapCut"],
+      "top":   false
+    }
+  ]
+}

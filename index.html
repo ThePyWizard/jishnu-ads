@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="jishnudp-pixelart.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,14 +28,21 @@
       <div class="topbar__time">
         <span class="led"></span><span id="clock">--:--</span>
       </div>
+      <button class="audio-toggle" id="audio-toggle" type="button" aria-label="Toggle audio" aria-pressed="false" title="Mute / unmute (M)">
+        <span class="audio-toggle__on" aria-hidden="true">♪</span>
+        <span class="audio-toggle__off" aria-hidden="true">×</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span class="bar"></span></button>
     </header>
 
-    <nav class="nav fadeup fadeup--d1">
+    <nav class="nav fadeup fadeup--d1" id="primary-nav">
       <a href="index.html" class="is-active">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="experience.html">EXP</a>
       <a href="work.html">WORK</a>
+      <a href="ads.html">ADS</a>
       <a href="templates.html">PROMPTS</a>
+      <a href="play.html">PLAY</a>
       <a href="contact.html">CONTACT</a>
     </nav>
 
@@ -42,7 +51,7 @@
 
         <section class="hero">
           <div class="hero__avatar-wrap">
-            <span class="hero__lvtag">LV. 24</span>
+            <span class="hero__lvtag">LV. 22</span>
             <div class="hero__avatar-frame"></div>
             <div class="hero__avatar">
               <img src="./jishnudp-pixelart.png" alt="Jishnu M M, pixel-art portrait" />
@@ -51,7 +60,7 @@
 
           <div class="hero__copy">
             <p class="eyebrow">► PLAYER 1 — READY</p>
-            <h1 class="hero__name">JISHNU<br /><span>M M</span></h1>
+            <h1 class="hero__name">JISHNU<span>_</span></h1>
             <p class="hero__tagline">
               I'm a <strong>creative strategist</strong> who builds AI-first ad pipelines &amp;
               scales subscription apps from <strong>$50</strong> to <strong>$500/day</strong>
@@ -59,7 +68,7 @@
             </p>
             <p class="hero__press"><span class="blink">▶</span> PRESS START</p>
             <div class="hero__cta">
-              <a href="work.html" class="pbtn">▶ NEW GAME</a>
+              <a href="ads.html" class="pbtn">▶ SEE MY ADS</a>
               <a href="about.html" class="pbtn pbtn--cyan">LOAD STORY</a>
               <a href="templates.html" class="pbtn pbtn--ghost">PROMPT VAULT</a>
             </div>
@@ -139,6 +148,7 @@
     </footer>
   </div>
 
+  <script src="audio.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
