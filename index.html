@@ -3,75 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ad Templates</title>
+  <title>JISHNU.SYS — Creative Strategist</title>
+  <meta name="description" content="Jishnu M M — Creative Strategist & App Marketer. Performance creative, AI content pipelines, paid growth across Meta, TikTok, and Google." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="horizon"></div>
 
-  <header>
-    <img class="avatar" src="./jishnudp-cartoon.png" alt="jishnu.ads" />
-    <h1>AI Ad Templates</h1>
-    <p>Ready-to-use AI templates for video ads, image creatives &amp; prompts.</p>
-    <a class="ig-link" href="https://instagram.com/jishnu.ads" target="_blank" rel="noopener">@jishnu.ads on Instagram</a>
-  </header>
+  <div class="app">
+    <header class="topbar fadeup">
+      <div class="topbar__title">
+        <span class="dots">
+          <span class="dot dot--g"></span>
+          <span class="dot dot--y"></span>
+          <span class="dot dot--c"></span>
+        </span>
+        JISHNU.SYS <span class="blink">_</span>
+      </div>
+      <div class="topbar__time">
+        <span class="led"></span><span id="clock">--:--</span>
+      </div>
+    </header>
 
-  <div class="filter-bar" id="filters"></div>
-  <div id="templates"></div>
+    <nav class="nav fadeup fadeup--d1">
+      <a href="index.html" class="is-active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="experience.html">EXP</a>
+      <a href="work.html">WORK</a>
+      <a href="templates.html">PROMPTS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
 
-  <footer>&copy; 2026</footer>
+    <main class="screen fadeup fadeup--d2">
+      <div class="container">
 
-  <script>
-    let allTemplates = [];
-    let activeFilter = "All";
-
-    fetch("templates.json")
-      .then((r) => r.json())
-      .then((data) => {
-        allTemplates = data;
-        buildFilters();
-        render();
-      });
-
-    function buildFilters() {
-      const tags = ["All", ...new Set(allTemplates.map((t) => t.tag))];
-      const bar = document.getElementById("filters");
-      bar.innerHTML = tags
-        .map(
-          (tag) =>
-            `<button class="filter-btn${tag === activeFilter ? " active" : ""}" data-tag="${tag}">${tag}</button>`
-        )
-        .join("");
-      bar.addEventListener("click", (e) => {
-        if (!e.target.classList.contains("filter-btn")) return;
-        activeFilter = e.target.dataset.tag;
-        bar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
-        e.target.classList.add("active");
-        render();
-      });
-    }
-
-    function render() {
-      const list = activeFilter === "All"
-        ? allTemplates
-        : allTemplates.filter((t) => t.tag === activeFilter);
-
-      document.getElementById("templates").innerHTML = list
-        .map(
-          (t) => `
-          <a class="card" href="${t.url}" target="_blank" rel="noopener">
-            <div class="card-top">
-              <span class="card-title">${t.title}<span class="arrow">&thinsp;&#8599;</span></span>
-              <span class="card-tag">${t.tag}</span>
+        <section class="hero">
+          <div class="hero__avatar-wrap">
+            <span class="hero__lvtag">LV. 24</span>
+            <div class="hero__avatar-frame"></div>
+            <div class="hero__avatar">
+              <img src="./jishnudp-pixelart.png" alt="Jishnu M M, pixel-art portrait" />
             </div>
-            <p class="card-desc">${t.description}</p>
-          </a>`
-        )
-        .join("");
-    }
-  </script>
+          </div>
 
+          <div class="hero__copy">
+            <p class="eyebrow">► PLAYER 1 — READY</p>
+            <h1 class="hero__name">JISHNU<br /><span>M M</span></h1>
+            <p class="hero__tagline">
+              I'm a <strong>creative strategist</strong> who builds AI-first ad pipelines &amp;
+              scales subscription apps from <strong>$50</strong> to <strong>$500/day</strong>
+              with creative that actually converts.
+            </p>
+            <p class="hero__press"><span class="blink">▶</span> PRESS START</p>
+            <div class="hero__cta">
+              <a href="work.html" class="pbtn">▶ NEW GAME</a>
+              <a href="about.html" class="pbtn pbtn--cyan">LOAD STORY</a>
+              <a href="templates.html" class="pbtn pbtn--ghost">PROMPT VAULT</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="statpanel">
+          <div class="statpanel__cell">
+            <div class="statpanel__k">CLASS</div>
+            <div class="statpanel__v">Creative<small>Strategist</small></div>
+          </div>
+          <div class="statpanel__cell">
+            <div class="statpanel__k">REGION</div>
+            <div class="statpanel__v">Kerala<small>India · IST</small></div>
+          </div>
+          <div class="statpanel__cell">
+            <div class="statpanel__k">GUILD</div>
+            <div class="statpanel__v">Lascade<small>+ Impending</small></div>
+          </div>
+          <div class="statpanel__cell">
+            <div class="statpanel__k">SPECIAL</div>
+            <div class="statpanel__v">AI UGC<small>+ Meta &amp; TikTok</small></div>
+          </div>
+        </section>
+
+        <section style="margin-top:64px;">
+          <h2 class="h-section">SAVE FILE — KEY METRICS</h2>
+          <div class="metrics">
+            <div class="metric metric--cyan fadeup fadeup--d2">
+              <div class="pframe pframe--cyan"><div class="pcard">
+                <div class="metric__num">100K+</div>
+                <div class="metric__label">TravelAnimator installs</div>
+                <div class="metric__sub">delivered in 2025 at avg <b style="color:var(--green)">$0.50</b> CPI.</div>
+              </div></div>
+            </div>
+            <div class="metric metric--pink fadeup fadeup--d3">
+              <div class="pframe"><div class="pcard">
+                <div class="metric__num">$52,841</div>
+                <div class="metric__label">iOS subscription revenue</div>
+                <div class="metric__sub">in 4 months on a <b style="color:var(--cyan)">$33,530</b> Meta budget.</div>
+              </div></div>
+            </div>
+            <div class="metric metric--yellow fadeup fadeup--d4">
+              <div class="pframe pframe--yellow"><div class="pcard">
+                <div class="metric__num">200+</div>
+                <div class="metric__label">Ads shipped</div>
+                <div class="metric__sub">video &amp; static, across TikTok, Meta &amp; YouTube.</div>
+              </div></div>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top:64px;">
+          <h2 class="h-section">QUEST PREVIEW</h2>
+          <p class="lede" style="max-width:740px; margin-bottom:24px;">
+            Currently scaling subscription apps at <span style="color:var(--cyan)">Lascade LLP</span>
+            and shipping freelance creatives at <span style="color:var(--pink-bright)">Impending, Inc.</span>
+            — the studio behind <em style="color:var(--yellow); font-style:normal;">HeadsUp</em>.
+          </p>
+          <div class="hero__cta">
+            <a href="experience.html" class="pbtn">VIEW QUEST LOG ►</a>
+            <a href="contact.html" class="pbtn pbtn--cyan">SEND TRANSMISSION</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="ticker fadeup fadeup--d3">
+      <div class="ticker__label">► STATUS</div>
+      <div class="ticker__track">
+        <div class="ticker__inner">
+          <span>★</span> <b>100K+ INSTALLS</b> <span>★</span> 200+ ADS SHIPPED <span>★</span> <b>$0.50 AVG CPI</b> <span>★</span> SCALED $50 → $500/DAY <span>★</span> <b>iOS · 58K INSTALLS</b> <span>★</span> $52,841 REVENUE <span>★</span> <b>n8n + SLACK PIPELINE</b> <span>★</span> SORA · HEYGEN · ELEVENLABS <span>★</span> <b>OPEN TO COLLABS</b> <span>★</span>
+          <span>★</span> <b>100K+ INSTALLS</b> <span>★</span> 200+ ADS SHIPPED <span>★</span> <b>$0.50 AVG CPI</b> <span>★</span> SCALED $50 → $500/DAY <span>★</span> <b>iOS · 58K INSTALLS</b> <span>★</span> $52,841 REVENUE <span>★</span> <b>n8n + SLACK PIPELINE</b> <span>★</span> SORA · HEYGEN · ELEVENLABS <span>★</span> <b>OPEN TO COLLABS</b> <span>★</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

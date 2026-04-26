@@ -1,38 +1,134 @@
 [
   {
-    "title": "AI Product Video Ad — 30s Hook",
-    "description": "AI-generated video ad template with attention-grabbing hook for product launches.",
-    "url": "https://example.com/template-1",
-    "tag": "Video Ad"
+    "title": "Travel App — 6s TikTok Hook (Sora)",
+    "description": "Sora prompt that produces a cinematic 6-second travel hook: aerial pull-out, location-switch hard cut, and on-screen text drop-in. Plug in your destination + app feature.",
+    "url": "#",
+    "tag": "Travel"
   },
   {
-    "title": "Static Image Ad — Before/After",
-    "description": "Clean before/after image creative for skincare, fitness & SaaS products.",
-    "url": "https://example.com/template-2",
-    "tag": "Image Ad"
+    "title": "Travel App — UGC POV Voiceover",
+    "description": "ElevenLabs voiceover script + HeyGen avatar prompt for a 'POV: I just discovered this app' style ad. Tested on TravelAnimator funnel.",
+    "url": "#",
+    "tag": "Travel"
   },
   {
-    "title": "Claude Prompt — Ad Copywriter",
-    "description": "Prompt that generates high-converting ad copy with hooks, CTAs & variations.",
-    "url": "https://example.com/template-3",
-    "tag": "AI Prompt"
+    "title": "Mobile App — Before/After Static",
+    "description": "Image-ad prompt that generates a pixel-clean before/after split for any mobile app feature. Works for productivity, AI, and creative tools.",
+    "url": "#",
+    "tag": "Mobile Apps"
   },
   {
-    "title": "AI Carousel Ad — Feature Showcase",
-    "description": "Multi-slide carousel template to highlight product features with AI visuals.",
-    "url": "https://example.com/template-4",
-    "tag": "Image Ad"
+    "title": "Mobile App — App Store Screenshot Set",
+    "description": "Generates 5-screen ASO bundle (hero + 4 feature shots) with consistent typography and on-device frames. Drop your app name + 5 features.",
+    "url": "#",
+    "tag": "Mobile Apps"
   },
   {
-    "title": "UGC-Style Video Ad — Testimonial",
-    "description": "AI-powered UGC-style video template that feels organic and authentic.",
-    "url": "https://example.com/template-5",
-    "tag": "Video Ad"
+    "title": "Casual Game — 3-Hook Variant Pack",
+    "description": "Claude prompt that spits out 3 distinct hook angles (loss-aversion, identity, pattern-break) for any casual mobile game. Use for PuzzleCafe-style funnels.",
+    "url": "#",
+    "tag": "Gaming"
   },
   {
-    "title": "Claude Prompt — Ad Creative Brainstorm",
-    "description": "Prompt that generates 10 unique ad angles and concepts for any product.",
-    "url": "https://example.com/template-6",
-    "tag": "AI Prompt"
+    "title": "Casual Game — Gameplay Reaction UGC",
+    "description": "Reaction-style UGC script template — '3 levels in and i'm hooked' format. Pair with a phone-cam frame and HeyGen avatar.",
+    "url": "#",
+    "tag": "Gaming"
+  },
+  {
+    "title": "SaaS — Problem→Solution 15s Reel",
+    "description": "Reel script template structured around pain → product → proof → CTA. Ideal for founder-led SaaS ads on LinkedIn + Meta.",
+    "url": "#",
+    "tag": "SaaS"
+  },
+  {
+    "title": "SaaS — Comparison Carousel",
+    "description": "Carousel ad prompt that auto-fills a 'before tool / with tool' comparison across 6 slides. Great for productivity SaaS.",
+    "url": "#",
+    "tag": "SaaS"
+  },
+  {
+    "title": "E-commerce — Product Hero (Static)",
+    "description": "Image prompt for a product hero shot on a colored gradient stage with prop debris. Works for D2C beauty, gadgets, food.",
+    "url": "#",
+    "tag": "E-commerce"
+  },
+  {
+    "title": "E-commerce — UGC Unboxing Hook",
+    "description": "Unboxing-format script + shot list optimised for first-3-second retention. Includes hands-only B-roll cues.",
+    "url": "#",
+    "tag": "E-commerce"
+  },
+  {
+    "title": "Fitness — 30-Day Transformation Reel",
+    "description": "Voiceover + b-roll prompt for 30-day fitness transformations without a real face on camera. Pure AI UGC.",
+    "url": "#",
+    "tag": "Fitness"
+  },
+  {
+    "title": "Fitness — Static Ad: '5-min Routine'",
+    "description": "Image ad with a 5-step icon stack and a strong CTA. Works for habit, fitness, mindfulness apps.",
+    "url": "#",
+    "tag": "Fitness"
+  },
+  {
+    "title": "Beauty — Skincare 'Glow-up' UGC",
+    "description": "Day-1 vs Day-30 voiceover script + lighting/lens cues. Keeps it organic-feeling for Meta beauty funnels.",
+    "url": "#",
+    "tag": "Beauty"
+  },
+  {
+    "title": "Beauty — Ingredient Spotlight Carousel",
+    "description": "Carousel template that breaks down a single hero ingredient across 5 slides with chemistry-paper aesthetics.",
+    "url": "#",
+    "tag": "Beauty"
+  },
+  {
+    "title": "Food — 6s Sizzle Cut",
+    "description": "Sora prompt that generates a fast-cut food sizzle reel — close-ups, sauce drips, steam. Drop in your dish + brand.",
+    "url": "#",
+    "tag": "Food"
+  },
+  {
+    "title": "Food — Delivery App Promo Static",
+    "description": "Image ad prompt for delivery-app promos with discount badge, hero dish, app icon, and CTA stack.",
+    "url": "#",
+    "tag": "Food"
+  },
+  {
+    "title": "Education — Course Promo Reel",
+    "description": "Reel script that frames a course around outcome-first promises. Pairs with HeyGen 'lesson preview' avatar.",
+    "url": "#",
+    "tag": "Education"
+  },
+  {
+    "title": "Education — '5 Things You Don't Know' Hook",
+    "description": "Listicle reel hook structure for any teaching niche. Designed for high retention on TikTok.",
+    "url": "#",
+    "tag": "Education"
+  },
+  {
+    "title": "n8n — Creative Inspo Scraper",
+    "description": "Full n8n workflow JSON: scrapes ads + organic from a list of competitors, drops a Slack digest with thumbnails.",
+    "url": "#",
+    "tag": "AI Workflow"
+  },
+  {
+    "title": "n8n — Brief → Ad Pipeline",
+    "description": "Workflow that converts a brief in a Notion page into a HeyGen + ElevenLabs render and pings Slack when done.",
+    "url": "#",
+    "tag": "AI Workflow"
+  },
+  {
+    "title": "Universal — 10 Ad Hook Generator",
+    "description": "Claude prompt that generates 10 distinct ad hook angles for any product. The first thing I run on every new account.",
+    "url": "#",
+    "tag": "Hooks"
+  },
+  {
+    "title": "Universal — Pattern-Interrupt Hook Pack",
+    "description": "Claude prompt that produces 8 pattern-interrupt openers (visual + verbal) for short-form video.",
+    "url": "#",
+    "tag": "Hooks"
   }
 ]

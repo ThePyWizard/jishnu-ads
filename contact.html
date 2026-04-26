@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JISHNU.SYS — Send Transmission</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="horizon"></div>
+
+  <div class="app">
+    <header class="topbar fadeup">
+      <div class="topbar__title">
+        <span class="dots">
+          <span class="dot dot--g"></span>
+          <span class="dot dot--y"></span>
+          <span class="dot dot--c"></span>
+        </span>
+        JISHNU.SYS / TRANSMIT.EXE <span class="blink">_</span>
+      </div>
+      <div class="topbar__time">
+        <span class="led"></span><span id="clock">--:--</span>
+      </div>
+    </header>
+
+    <nav class="nav fadeup fadeup--d1">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="experience.html">EXP</a>
+      <a href="work.html">WORK</a>
+      <a href="templates.html">PROMPTS</a>
+      <a href="contact.html" class="is-active">CONTACT</a>
+    </nav>
+
+    <main class="screen fadeup fadeup--d2">
+      <div class="container">
+
+        <p class="eyebrow">► TRANSMISSION TERMINAL</p>
+        <h1 class="h-page">SAY <span>HI</span></h1>
+        <p class="lede" style="max-width:760px; margin: 12px 0 32px;">
+          App marketing, AI creative pipelines, freelance projects, podcasts, or just
+          to nerd out about CPI — pick whichever channel works. Email is fastest.
+        </p>
+
+        <div class="contact">
+
+          <section class="terminal fadeup fadeup--d2">
+            <div class="pframe pframe--cyan"><div class="pcard">
+              <p class="term-line"><span class="prompt">$</span> ./compose-message <span class="cursor"></span></p>
+              <p class="term-line"><span class="out">// fill in the fields below — i'll respond from <b style="color:var(--yellow)">jishnumm4312@gmail.com</b></span></p>
+
+              <form id="contact-form" action="https://formsubmit.co/jishnumm4312@gmail.com" method="POST" style="margin-top:18px;">
+                <input type="hidden" name="_subject" value="New transmission from JISHNU.SYS" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="_honey" style="display:none" />
+
+                <div class="field">
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" type="text" required placeholder="player_two" />
+                </div>
+                <div class="field">
+                  <label for="email">Reply address</label>
+                  <input id="email" name="email" type="email" required placeholder="you@studio.com" />
+                </div>
+                <div class="field">
+                  <label for="topic">Topic</label>
+                  <input id="topic" name="topic" type="text" placeholder="paid growth · ai ugc · prompt request · collab" />
+                </div>
+                <div class="field">
+                  <label for="msg">Message</label>
+                  <textarea id="msg" name="message" rows="5" required placeholder="tell me about your app, the channels you're running on, and what you want to fix..."></textarea>
+                </div>
+
+                <div class="send-row">
+                  <button class="pbtn" type="submit">▶ SEND TRANSMISSION</button>
+                  <span class="send-status" id="send-status"></span>
+                </div>
+              </form>
+            </div></div>
+          </section>
+
+          <aside class="contact-info fadeup fadeup--d3">
+            <div class="pframe"><div class="pcard">
+              <h3 class="h-card">▼ DIRECT CHANNELS</h3>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon">@</div>
+                <div class="cinfo-text">
+                  <span class="label">Email</span>
+                  <a href="mailto:jishnumm4312@gmail.com">jishnumm4312@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon cinfo-icon--cyan">in</div>
+                <div class="cinfo-text">
+                  <span class="label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/jishnumm" target="_blank" rel="noopener">linkedin.com/in/jishnumm</a>
+                </div>
+              </div>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon cinfo-icon--green">{ }</div>
+                <div class="cinfo-text">
+                  <span class="label">GitHub</span>
+                  <a href="https://github.com/thepywizard" target="_blank" rel="noopener">github.com/thepywizard</a>
+                </div>
+              </div>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon cinfo-icon--yellow">▶</div>
+                <div class="cinfo-text">
+                  <span class="label">TikTok (Side Quest)</span>
+                  <a href="https://www.tiktok.com/@mapsoftheworldroutes" target="_blank" rel="noopener">@mapsoftheworldroutes</a>
+                </div>
+              </div>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon">☎</div>
+                <div class="cinfo-text">
+                  <span class="label">Phone</span>
+                  <a href="tel:+917561854644">+91 75618 54644</a>
+                </div>
+              </div>
+
+              <div class="cinfo-row">
+                <div class="cinfo-icon cinfo-icon--cyan">⌖</div>
+                <div class="cinfo-text">
+                  <span class="label">Base camp</span>
+                  <span>Kochi, Kerala · India (IST)</span>
+                </div>
+              </div>
+            </div></div>
+
+            <div class="pframe pframe--yellow" style="margin-top:24px;"><div class="pcard">
+              <h3 class="h-card" style="color:var(--yellow);">▼ AVAILABILITY</h3>
+              <p class="body">Currently <b style="color:var(--green)">accepting</b> short freelance creative-strategy sprints &amp; long-term retainers for subscription apps.</p>
+              <p class="body" style="margin-top:8px;">Best fit: <span style="color:var(--cyan)">paid creative + AI UGC pipelines</span> for mobile apps with active spend.</p>
+            </div></div>
+          </aside>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="ticker fadeup fadeup--d3">
+      <div class="ticker__label">► RX</div>
+      <div class="ticker__track">
+        <div class="ticker__inner">
+          <span>★</span> <b>jishnumm4312@gmail.com</b> <span>★</span> LINKEDIN /JISHNUMM <span>★</span> <b>GITHUB /THEPYWIZARD</b> <span>★</span> +91 75618 54644 <span>★</span> <b>OPEN FOR FREELANCE</b> <span>★</span> KOCHI · IST <span>★</span>
+          <span>★</span> <b>jishnumm4312@gmail.com</b> <span>★</span> LINKEDIN /JISHNUMM <span>★</span> <b>GITHUB /THEPYWIZARD</b> <span>★</span> +91 75618 54644 <span>★</span> <b>OPEN FOR FREELANCE</b> <span>★</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
