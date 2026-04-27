@@ -242,40 +242,39 @@ body::after {
 @media (max-width: 540px) {
   .audio-toggle { width: 44px; font-size: 12px; }
   .audio-toggle__off { font-size: 16px; }
+  .nav-toggle__cog { font-size: 18px; text-shadow: 1px 1px 0 var(--gold); }
 }
 
-/* ── NAV TOGGLE (hamburger) ────────────────────────────── */
+/* ── NAV TOGGLE (retro settings panel) ───────────────────── */
 .nav-toggle {
   display: none;
   flex: none;
-  width: 60px;
+  width: 64px;
   background: var(--pink);
   border-left: 4px solid var(--black);
   position: relative;
   cursor: pointer;
   padding: 0;
   align-self: stretch;
+  overflow: hidden;
+  font-family: var(--f-mono);
+  color: var(--black);
 }
-.nav-toggle::before,
-.nav-toggle::after,
-.nav-toggle span.bar {
-  content: '';
+.nav-toggle__cog {
   position: absolute;
-  left: 14px;
-  right: 14px;
-  height: 4px;
-  background: var(--black);
-  transition: top 0.2s steps(2), transform 0.2s steps(2), opacity 0.1s steps(2);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+  text-shadow: 2px 2px 0 var(--gold);
+  transition: transform 0.25s steps(4);
 }
-.nav-toggle::before  { top: 18px; }
-.nav-toggle span.bar { top: 28px; }
-.nav-toggle::after   { top: 38px; }
-
-.nav-toggle.is-open::before { top: 28px; transform: rotate(45deg); background: var(--black); }
-.nav-toggle.is-open span.bar { opacity: 0; }
-.nav-toggle.is-open::after  { top: 28px; transform: rotate(-45deg); background: var(--black); }
-
 .nav-toggle:hover { background: var(--gold); }
+.nav-toggle:hover .nav-toggle__cog { text-shadow: 2px 2px 0 var(--pink); }
+.nav-toggle.is-open { background: var(--cyan); }
+.nav-toggle.is-open .nav-toggle__cog { transform: rotate(90deg); text-shadow: 2px 2px 0 var(--black); }
 
 /* ── NAV ───────────────────────────────────────────────── */
 .nav {
@@ -1794,8 +1793,11 @@ body::after {
 
 /* mobile: hamburger + drawer ── */
 @media (max-width: 820px) {
-  .nav-toggle { display: block; }
-  .topbar__time { padding: 0 12px; font-size: 15px; }
+  .nav-toggle,
+  .nav-toggle:hover,
+  .nav-toggle.is-open { display: block; background: var(--yellow); }
+  .topbar__time { display: none; }
+  .topbar__title { flex: 1 1 auto; min-width: 0; }
 
   .nav {
     flex-direction: column;
@@ -1848,7 +1850,6 @@ body::after {
   .hero__avatar { width: 220px; height: 220px; }
   .hero__name { font-size: 24px; }
   .h-page { font-size: 18px; text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 var(--black); }
-  .topbar__time { display: none; }
   .nav-toggle { width: 56px; }
   .hero__lvtag { right: 0; top: -16px; font-size: 9px; }
   .cabinet__title { font-size: 16px; }
