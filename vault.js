@@ -7,20 +7,10 @@
   if (!grid || !filterBar) return;
 
   const TAG_CLASS = {
-    'Travel':       'tcard__tag--cyan',
-    'Mobile Apps':  'tcard__tag--pink',
-    'Gaming':       'tcard__tag--orange',
-    'SaaS':         'tcard__tag--cyan',
-    'E-commerce':   'tcard__tag--pink',
-    'Fitness':      'tcard__tag--green',
-    'Beauty':       'tcard__tag--pink',
-    'Food':         'tcard__tag--orange',
-    'Education':    'tcard__tag--cyan',
+    'UGC Prompts':  'tcard__tag--cyan',
+    'Carousel':     'tcard__tag--pink',
     'AI Workflow':  'tcard__tag--green',
-    'Hooks':        '',
-    'Image Ad':     'tcard__tag--green',
-    'Video Ad':     'tcard__tag--pink',
-    'AI Prompt':    'tcard__tag--cyan',
+    'Static Ads':   'tcard__tag--orange',
   };
 
   let all = [];
