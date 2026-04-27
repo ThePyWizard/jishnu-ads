@@ -1,0 +1,15 @@
+[
+  { "title": "Tarzan Boy",                "artist": "Baltimora",            "file": "Baltimora - Tarzan Boy.mp3" },
+  { "title": "Wake Me Up Before You Go-Go","artist": "Wham!",               "file": "Wham! - Wake Me Up Before You Go-Go (Official Video).mp3" },
+  { "title": "You Spin Me Round",          "artist": "Dead Or Alive",       "file": "Dead Or Alive - You Spin Me Round (Like a Record) (Official Video).mp3" },
+  { "title": "Material Girl",              "artist": "Madonna",             "file": "Madonna - Material Girl (Lyrics) Cause we are living in a material world.mp3" },
+  { "title": "Time After Time",            "artist": "Cyndi Lauper",        "file": "Cyndi Lauper - Time After Time (Audio).mp3" },
+  { "title": "Running Up That Hill",       "artist": "Kate Bush",           "file": "Kate Bush - Running Up That Hill - Official Music Video.mp3" },
+  { "title": "Never Ending Story",         "artist": "Limahl",              "file": "Limahl - Never Ending Story (Official Music Video).mp3" },
+  { "title": "Every Breath You Take",      "artist": "The Police",          "file": "The Police - Every Breath You Take (Official Music Video).mp3" },
+  { "title": "California Dreamin'",        "artist": "The Mamas & The Papas","file": "The Mamas & The Papas - California Dreamin'.mp3" },
+  { "title": "Should I Stay or Should I Go","artist": "The Clash",          "file": "The Clash - Should I Stay or Should I Go (Official Video).mp3" },
+  { "title": "Runaway",                    "artist": "Bon Jovi",            "file": "Bon Jovi - Runaway (Official Music Video).mp3" },
+  { "title": "Rock You Like A Hurricane",  "artist": "Scorpions",           "file": "Scorpions - Rock You Like A Hurricane (Official Music Video).mp3" },
+  { "title": "Master of Puppets",          "artist": "Metallica",           "file": "Master of Puppets (Remastered).mp3" }
+]

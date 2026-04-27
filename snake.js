@@ -46,11 +46,12 @@
   const cabinetEl  = document.getElementById('cabinet');
 
   // ── persistent state ──────────────────────────────────
+  // high-score persists across sessions; attempts reset every page load
+  // so the unlock-badge can't appear before the player earns it this visit
   const STATE_HI_KEY = 'jishnu.snake.highscore';
-  const STATE_AT_KEY = 'jishnu.snake.attempts';
   let hiscore  = Number(localStorage.getItem(STATE_HI_KEY) || 0);
-  let attempts = Number(localStorage.getItem(STATE_AT_KEY) || 0);
-  let unlocked = attempts >= REQUIRED_ATTEMPTS;
+  let attempts = 0;
+  let unlocked = false;
 
   // ── per-game state ────────────────────────────────────
   let snake, dir, nextDir, food, score, tickMs, lastTick, running, paused, raf;
@@ -108,9 +109,8 @@
     running = false;
     cancelAnimationFrame(raf);
 
-    // increment attempts (any game-over counts)
+    // increment attempts (any game-over counts) — session-only, not persisted
     attempts += 1;
-    localStorage.setItem(STATE_AT_KEY, String(attempts));
     const justUnlocked = !unlocked && attempts >= REQUIRED_ATTEMPTS;
     if (attempts >= REQUIRED_ATTEMPTS) unlocked = true;
 
